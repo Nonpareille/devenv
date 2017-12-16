@@ -1,0 +1,25 @@
+;= @echo off
+;= rem Call DOSKEY and use this file as the macrofile
+;= %SystemRoot%\system32\doskey /listsize=1000 /macrofile=%0%
+;= rem In batch mode, jump to the end of the file
+;= goto:eof
+;= Add aliases below here
+e.=explorer .
+gl=git log --oneline --all --graph --decorate  $*
+la=ls --show-control-chars -F -A --color $*
+ll=ls -lAHL --show-control-chars --group-directories-first --color $* | less -FXr
+llr=ls -lAHL --show-control-chars --group-directories-first -R $* | less -FXr
+ls=ls --show-control-chars -F --color $*
+pwd=cd
+clear=cls
+history=cat "%CMDER_ROOT%\config\.history"
+unalias=alias /d $1
+vi=vim $*
+sandbox=cd /d C:\sandbox
+home=cd /d "%HOME%"
+c.=cd ..
+appdata=cd /d "%LOCALAPPDATA%"
+temp=cd /d "%TEMP%"
+path=echo %PATH% | tr ; \n
+which=where $* | head -n1
+vcvars=C:\bin\msvc_2017\VC\Auxiliary\Build\vcvarsall.bat amd64 > NUL
