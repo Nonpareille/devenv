@@ -1,0 +1,11 @@
+[alias]
+  co = checkout
+  s = status -sb
+  su = status -sbu
+  au = add -u
+[push]
+  default = current
+[rebase]
+  autoStash = true
+[status]
+  showUntrackedFiles = no
