@@ -6,6 +6,8 @@
 ;= Add aliases below here
 e.=explorer .
 gl=git log --oneline --all --graph --decorate  $*
+got=git
+get=git
 la=ls --show-control-chars -F -A --color $*
 ll=ls -lAHL --show-control-chars --group-directories-first --color $* | less -FXr
 llr=ls -lAHL --show-control-chars --group-directories-first -R $* | less -FXr
