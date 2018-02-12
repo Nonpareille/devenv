@@ -4,7 +4,7 @@
   su = status -sbu
   au = add -u
 [push]
-  default = current
+  default = upstream
 [rebase]
   autoStash = true
 [status]
