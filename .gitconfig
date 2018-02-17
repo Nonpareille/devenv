@@ -1,8 +1,12 @@
 [alias]
+  ls = log --pretty=format:'%C(yellow)%h %Creset%<|(89,trunc)%s%Cblue %>|(90)[%cn]' --decorate
+  ll = log --pretty=format:'%C(yellow)%h%Cred%d%Cblue %>|(90)%x5B%cn]%n  %Creset%s' --decorate --numstat --no-merges
+  graph = log --pretty=format:'%C(yellow)%h %Creset%<|(89,trunc)%s%Cblue %>|(90)%x5B%cn]' --graph --decorate
   co = checkout
-  s = status -sb
-  su = status -sbu
+  s = status -bs
+  su = status -bsu
   au = add -u
+  amend = commit --amend --no-edit
 [push]
   default = upstream
 [rebase]
