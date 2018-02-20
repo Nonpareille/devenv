@@ -33,7 +33,7 @@
   "workbench.editor.revealIfOpen": true,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.colorTheme": "Monokai",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "vs-seti",
   "zenMode.hideTabs": false,
   "zenMode.hideStatusBar": false,
   
