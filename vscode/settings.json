@@ -1,0 +1,127 @@
+{
+// --- General settings ---
+  "debug.inlineValues": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 150,
+  "editor.wrappingIndent": "indent",
+  "editor.autoClosingBrackets": false,
+  "editor.formatOnPaste": true,
+  "editor.emptySelectionClipboard": false,
+  "editor.fontLigatures": true,
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.tabCompletion": true,
+  "editor.lineNumbers": "relative",
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.hotExit": "onExitAndWindowClose",
+  "git.autofetch": false,
+  "git.countBadge": "tracked",
+  "search.quickOpen.includeSymbols": true,
+  "terminal.integrated.scrollback": 9999,
+  "telemetry.enableTelemetry": false,
+  "window.restoreFullscreen": true,
+  "window.title": "${rootName}${separator}${activeEditorLong}${dirty}",
+  "window.newWindowDimensions": "inherit",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Monokai",
+  "workbench.iconTheme": "vscode-icons",
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  
+// --- OS X settings ---
+  "terminal.external.osxExec": "iTerm.app",
+  
+// --- Windows settings ---
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": [ "/K", "C:\\bin\\cmder\\vendor\\init.bat" ],
+  "terminal.integrated.env.windows": { "CMDER_ROOT": "C:\\bin\\cmder" },
+  
+// --- C/C++ plugin ---
+  "C_Cpp.formatting": false,
+
+// --- GitLens plugin ---
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressUpdateNotice": true,
+    "suppressWelcomeNotice": false
+  },
+  "gitlens.codeLens.scopes": [ "document", "containers", "blocks" ],
+  "gitlens.blame.avatars": false,
+  "gitlens.blame.highlight.locations": [ "gutter", "overview" ],
+  "gitlens.recentChanges.highlight.locations": [ "gutter", "overview" ],
+  "gitlens.statusBar.enabled": false,
+  
+// --- Go plugin ---
+  "go.lintOnSave": "package",
+  
+// --- hexdump for VSCode plugin ---
+  "hexdump.width": 32,
+  
+// --- Vim plugin ---
+  "vim.useCtrlKeys": false,
+  "vim.useSystemClipboard": true,
+  "vim.overrideCopy": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [ "j", "j" ],
+      "after": [ "<Esc>" ]
+    },
+    {
+      "before": [ "leader", "d" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "down", "by": "halfPage", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "u" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "up", "by": "halfPage", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "b" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "down", "by": "page", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "f" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "up", "by": "page", "value": 1, "revealCursor": true }}]
+    }
+  ],
+  "vim.otherModesKeyBindings": [
+    {
+      "before": [ "leader", "e" ],
+      "commands": [{"command": "editorScroll", "args": { "to": "down", "by": "line", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "y" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "up", "by": "line", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "d" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "down", "by": "halfPage", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "u" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "up", "by": "halfPage", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "b" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "down", "by": "page", "value": 1, "revealCursor": true }}]
+    },
+    {
+      "before": [ "leader", "f" ],
+      "commands": [{ "command": "editorScroll", "args": { "to": "up", "by": "page", "value": 1, "revealCursor": true }}]
+    }
+  ]
+}
+  
